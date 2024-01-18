@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    width: 100vw;
+    background: radial-gradient( rgb(50 0 69) 25%, rgb(13 6 28) 100%);
+}
+
+.header_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header_container > .header_logo{
+    padding: 1.3rem 10%;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.header_container > .header_logo > img{
+    color: #fff;
+}
+
+
+.header_container > .navbar_container{
+    padding: 1.3rem 10%;
+}
+
+.header_container > .navbar_container > a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
