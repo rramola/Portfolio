@@ -110,6 +110,46 @@ body {
     margin-top: 0;
 }
 
+.content > .text > .icons {
+    display: grid;
+    padding: 1.3rem 10%;
+    grid-template-columns:  1fr 1fr;
+    transition: .5s;
+    justify-content: space-evenly;
+    transition: 5s;
+}
+
+
+.content > .text > .icons > .github > i {
+    color: #fff;
+    font-size: 5rem;
+    padding: 1.3rem 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 5rem;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.content > .text > .icons > .github > i:hover {
+    font-size: 7rem;
+    color: violet;
+}
+
+.content > .text > .icons > .linkedin > i {
+    color: #fff;
+    font-size: 5rem;
+    padding: 1.3rem 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 5rem;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.content > .text > .icons > .linkedin > i:hover {
+    font-size: 7rem;
+    color: violet;
+}
+
 .content > .body_img > img {
     width:50rem;
     margin-top: 10rem;
@@ -208,6 +248,13 @@ body {
     box-shadow: none;
 }
 
+.about {
+    display: grid;
+    color: violet;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20rem;
+}
+
 
 /* Media queries */
 
@@ -224,10 +271,11 @@ body {
         padding-left: 1rem;
         transform: scale(1.5);
         opacity: .3;
+        transition: .5s;
     }
 
     .content > .body_img > img {
-        transform: scale(1.5, 1.5);
+        transform: scale(1.5,1.5);
         width: 30rem;
         margin-top: 10rem;
         opacity: .5;
@@ -280,10 +328,20 @@ body {
         width: 270px;
     }
 
+    .content > .text > .icons {
+        display: flex;
+        padding: 1.3rem 10%;
+        grid-template-columns:  1fr 1fr;
+        transition: .5s;
+        justify-content: space-evenly;
+        transition: 5s;
+    }
+
 
 }
 
 @media (max-width: 768px) {
+
     .header_container {
         backdrop-filter: blur(50%);
         background-color: rgba(0, 0, 0, 0.274);
@@ -336,7 +394,8 @@ body {
         transition-delay: calc(.05s * var(--i));
     }
 
-
+/* 
+480, 768, 1024, 1280 */
 
 
 }
