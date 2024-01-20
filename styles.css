@@ -259,6 +259,7 @@ body {
         transform: scale(1.5);
         opacity: .3;
         transition: .5s;
+        z-index: -1;
     }
 
     .content > .body_img > img {
@@ -319,9 +320,6 @@ body {
         display: flex;
         padding: 1.3rem 10%;
         grid-template-columns:  1fr 1fr;
-        transition: .5s;
-        justify-content: space-evenly;
-        transition: 5s;
     }
 
 
