@@ -207,5 +207,8 @@ body {
         transition-delay: calc(.05s * var(--i))
     }
 
-
+    .content > h1 {
+ 
+        font-size: 2rem;
+    }
 }
