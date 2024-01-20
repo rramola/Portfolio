@@ -336,29 +336,7 @@ body {
         transition-delay: calc(.05s * var(--i));
     }
 
-    .contact > form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;    
-    }
 
-
-    .contact > form > .input_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 300px;
-    }
-
-
-    .contact > form >  .field > .item {
-        width: 40%;
-    }
-
-    .contact > form > .textarea_field > .item {
-        width: 200px;
-    }
 
 
 }
