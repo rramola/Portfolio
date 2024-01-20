@@ -3,7 +3,7 @@ body {
     padding: 0px;
     min-height: 100vh;
     width: 100vw;
-    background: radial-gradient( rgb(50 0 69) 25%, rgb(13 6 28) 100%)
+    background: radial-gradient( rgb(14, 0, 19) 25%, rgb(13 6 28) 100%)
 }
 
 
@@ -36,7 +36,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(240, 102, 240, 0.226), transparent);
-    transition: .5s
+    transition: .5s;
 }
 
 .header_container:hover::after {
@@ -90,15 +90,25 @@ body {
 
 .content {
     position: fixed;
-    width: 50%;
-    padding: 1.3rem 10%;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
 .content > h1 {
     color: #fff;
     margin-top: 15rem;
-    font-size: 7rem;
+    font-size: 5rem;
+    padding: 1.3rem 10%;
+}
+
+
+.content > .body_img > img {
+    width: 30rem;
+    margin-top: 10rem;
+    opacity: .5;
+    border-radius: 50%;
 }
 
 
@@ -124,7 +134,31 @@ body {
     }
     .header_container > .navbar_container {
         padding: 1.3rem 5%;
-    }      
+    }
+
+    .content > .body_img {
+        padding-left: 1rem;
+        transform: scale(1.5);
+        opacity: .3;
+    }
+
+    .content > .body_img > img {
+        transform: scale(1.5, 1.5)
+    }
+
+    .content {
+        position: fixed;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content > h1 {
+        color: #fff;
+        margin-top: 5.9rem;
+        font-size: 5rem;
+        margin-left: 3rem;
+        height: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -156,7 +190,7 @@ body {
     }
     #check:checked~.navbar_container {
         height: 11rem;
-        background-color: rgba(0, 0, 0, 0.274);
+        background-color: rgba(0, 0, 0, 0.788);
     }
     .header_container > .navbar_container > a {
         display: block;
@@ -172,5 +206,5 @@ body {
         transition-delay: calc(.05s * var(--i))
     }
 
-    
+
 }
