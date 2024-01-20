@@ -108,7 +108,7 @@ body {
     border-radius: 50%;
 }
 
-.footer {
+/* .footer {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -121,7 +121,7 @@ body {
 .footer > h1 {
     color: white;
     font-size: 3rem;
-}
+} */
 
 .contact h2 {
     font-size: 40px;
