@@ -3,9 +3,11 @@ body {
     padding: 0px;
     min-height: 100vh;
     width: 100vw;
-    background: radial-gradient( rgb(14, 0, 19) 25%, rgb(13 6 28) 100%)
+    background: radial-gradient( rgb(14, 0, 19) 25%, rgb(13 6 28) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .header_container {
     position: fixed;
@@ -56,8 +58,6 @@ body {
     position: relative;
 }
 
-
-
 .header_container > .navbar_container > a {
     font-size: 1.2rem;
     color: #fff;
@@ -71,8 +71,6 @@ body {
 .header_container > .navbar_container > a:hover {
     font-size: 1.5rem;
 }
-
-
 
 #check {
     display: none;
@@ -95,7 +93,6 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-
 .content > h1 {
     color: #fff;
     margin-top: 15rem;
@@ -103,14 +100,12 @@ body {
     padding: 1.3rem 10%;
 }
 
-
 .content > .body_img > img {
     width:50rem;
     margin-top: 10rem;
     opacity: .5;
     border-radius: 50%;
 }
-
 
 .footer {
     background-color: rgba(0, 0, 0, 0.5);
@@ -127,12 +122,90 @@ body {
     font-size: 3rem;
 }
 
+.contact h2 {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact > form {
+    width: 600px;
+    text-align: center;
+
+}
+
+.contact > form > .input_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_container > .input {
+    width: 46.5%;
+}
+.contact > form > .input_container > .field > .item {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid violet;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0;
+}
+
+.contact > form >  .field > .item {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid violet;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0;
+}
+
+.contact > form > .input_container > .field > .item::placeholder {
+    color:rgba(255, 255, 255, .4)
+}
+
+.contact > form >  .field > .item::placeholder {
+    color:rgba(255, 255, 255, .4)
+}
+
+.contact > form > .textarea_field > .item {
+    resize: none;
+}
+
+.contact > form > button {
+    padding: 12px 32px;
+    background: violet;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px violet;
+    font-size: 16px;
+    color: rgb(31, 31, 31);
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.contact > form > button:hover {
+    box-shadow: none;
+}
+
+
 /* Media queries */
 
 @media (max-width: 992px) {
     .header_container > .header_logo {
         padding: 1.3rem 5%;
     }
+
     .header_container > .navbar_container {
         padding: 1.3rem 5%;
     }
@@ -157,6 +230,7 @@ body {
         display: flex;
         flex-direction: column;
     }
+
     .content > h1 {
         color: #fff;
         margin-top: 5.9rem;
@@ -172,18 +246,23 @@ body {
         background-color: rgba(0, 0, 0, 0.274);
         z-index: 100;
     }
+
      .header_container > .menu_icon {
         display: inline-flex;
     }
+
     #check:checked~.menu_icon #open {
         display: none;
     }
+
     .header_container > .menu_icon > #close {
         display: none;
     }
+
     #check:checked~.menu_icon #close {
         display: block;
     }
+
     .header_container > .navbar_container {
         position: absolute;
         top:100%;
@@ -193,10 +272,12 @@ body {
         transition: .3s ease;
         overflow: hidden;
     }
+
     #check:checked~.navbar_container {
         height: 11rem;
         background-color: rgba(0, 0, 0, 0.788);
     }
+    
     .header_container > .navbar_container > a {
         display: block;
         font-size: 1rem;
@@ -205,6 +286,7 @@ body {
         opacity: 0;
         transition: .2s ease;
     }
+
     #check:checked~.navbar_container > a {
         transform: translateY(0);
         opacity: 1;
