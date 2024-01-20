@@ -70,6 +70,7 @@ body {
 
 .header_container > .navbar_container > a:hover {
     font-size: 1.5rem;
+    color: violet;
 }
 
 #check {
@@ -120,7 +121,7 @@ body {
 }
 
 
-.content > .text > .icons > .github > i {
+.content > .text > .icons > .github > a {
     color: #fff;
     font-size: 5rem;
     padding: 1.3rem 10%;
@@ -130,12 +131,12 @@ body {
     transition: color 0.5s, font-size 0.5s;
 }
 
-.content > .text > .icons > .github > i:hover {
+.content > .text > .icons > .github > a:hover {
     font-size: 7rem;
     color: violet;
 }
 
-.content > .text > .icons > .linkedin > i {
+.content > .text > .icons > .linkedin > a {
     color: #fff;
     font-size: 5rem;
     padding: 1.3rem 10%;
@@ -145,7 +146,7 @@ body {
     transition: color 0.5s, font-size 0.5s;
 }
 
-.content > .text > .icons > .linkedin > i:hover {
+.content > .text > .icons > .linkedin a:hover {
     font-size: 7rem;
     color: violet;
 }
@@ -157,20 +158,6 @@ body {
     border-radius: 50%;
 }
 
-/* .footer {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    margin-top: 47rem;
-    width: 100%;
-    height: 20%;
-}
-
-.footer > h1 {
-    color: white;
-    font-size: 3rem;
-} */
 
 .contact h2 {
     font-size: 40px;
