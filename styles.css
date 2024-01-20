@@ -124,6 +124,7 @@ body {
 
 .footer > h1 {
     color: white;
+    font-size: ;
 }
 
 /* Media queries */
@@ -155,7 +156,7 @@ body {
     .content > h1 {
         color: #fff;
         margin-top: 5.9rem;
-        font-size: 5rem;
+        font-size:3rem;
         margin-left: 3rem;
         height: 2rem;
     }
