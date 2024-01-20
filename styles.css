@@ -105,7 +105,7 @@ body {
 
 
 .content > .body_img > img {
-    width: 30rem;
+    width:50rem;
     margin-top: 10rem;
     opacity: .5;
     border-radius: 50%;
@@ -144,7 +144,11 @@ body {
     }
 
     .content > .body_img > img {
-        transform: scale(1.5, 1.5)
+        transform: scale(1.5, 1.5);
+        width: 30rem;
+        margin-top: 10rem;
+        opacity: .5;
+        border-radius: 50%;
     }
 
     .content {
