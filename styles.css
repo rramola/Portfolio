@@ -241,65 +241,40 @@ body {
     box-shadow: none;
 }
 
-.about {
-    display: grid;
-    color: violet;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20rem;
-}
-
 /* About me ***********************/
 
-.about {
-    display: flex;
-    flex-direction: column;
+
+.about_container {
     justify-content: space-around;
     padding-left: 5rem;
     padding-right: 5rem;
-}
-
-.about > .about_me_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: #fff;
     text-align: center;
 }
 
-.about > .about_me_content > .name_container {
+.about_container > .name_container {
     display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.about_container > .name_container > .name_intro {
+    font-size: 2rem;
+    height: 100%;
+}
+
+
+.about_container > .name_container > .my_name {
+    font-size: 4rem;
+    display: flex;
+    color: violet;
+}
+
+.about_container > .about_me_text > text {
     width: 100%;
-    padding-left: 25%;
-    padding-right: 25%;
-    margin-top: 10rem;
-
 }
 
-.about > .about_me_content > .name_container > .name_intro {
-    display: flex;
-    font-size: 2.5rem;
-}
-
-.about > .about_me_content > .name_container > .my_name {
-    font-size: 3rem;
-    color: white;
-
-}
-
-.about > .about_me_content > h2 {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
-}
-
-.about > .about_me_content > h3 {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    padding-left: 25%;
-    padding-right: 25%;
-}
 
 /* Media queries ***************/
 

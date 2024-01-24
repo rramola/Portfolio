@@ -17,3 +17,50 @@ design class was very interesting, we learned the basics of 3d
 modeling and visual basic. I became the go to person for fixing my
 friends computers and have since been in pursuit of entering this
 career field.
+
+
+
+
+
+.about_container > .about_me_intro > .name_container > .about_me_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about_container > .about_me_content > .name_container {
+    display: flex;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: 10rem;
+
+}
+
+.about_container > .about_me_content > .name_container > .name_intro {
+    display: flex;
+    font-size: 2.5rem;
+}
+
+.about_container > .about_me_content > .name_container > .my_name {
+    font-size: 3rem;
+    color: white;
+
+}
+
+.about_container > .about_me_content > h2 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.about_container > .about_me_content > h3 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
