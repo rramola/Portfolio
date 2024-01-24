@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .header_container {
@@ -87,8 +88,9 @@ body {
     bottom: 20%;
 }
 
+/* Home page ************************/
+
 .content {
-    position: fixed;
     width:100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -96,12 +98,13 @@ body {
 
 .content > .text > h1 {
     color: #fff;
-    margin-top: 15rem;
+    margin-top: 5rem;
     font-size: 5rem;
     padding: 1.3rem 10%;
     padding-bottom: 0;
     margin-bottom: 0;
     line-height: 5rem;
+    text-align: center;
 }
 
 .content > .text > h2 {
@@ -109,6 +112,7 @@ body {
     padding: 1.3rem 10%;
     color: violet;
     margin-top: 0;
+    text-align: center;
 }
 
 .content > .text > .icons {
@@ -118,6 +122,7 @@ body {
     transition: .5s;
     justify-content: space-evenly;
     transition: 5s;
+    text-align: center;
 }
 
 
@@ -158,6 +163,7 @@ body {
     border-radius: 50%;
 }
 
+/* Contact page*******************************/
 
 .contact h2 {
     font-size: 40px;
@@ -242,10 +248,62 @@ body {
     column-gap: 20rem;
 }
 
+/* About me ***********************/
 
-/* Media queries */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
 
-@media (max-width: 992px) {
+.about > .about_me_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about > .about_me_content > .name_container {
+    display: flex;
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: 10rem;
+
+}
+
+.about > .about_me_content > .name_container > .name_intro {
+    display: flex;
+    font-size: 2.5rem;
+}
+
+.about > .about_me_content > .name_container > .my_name {
+    font-size: 3rem;
+    color: white;
+
+}
+
+.about > .about_me_content > h2 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.about > .about_me_content > h3 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+/* Media queries ***************/
+
+@media (max-width: 973px) {
     .header_container > .header_logo {
         padding: 1.3rem 5%;
     }
@@ -253,6 +311,7 @@ body {
     .header_container > .navbar_container {
         padding: 1.3rem 5%;
     }
+
 
     .content > .body_img {
         padding-left: 1rem;
@@ -275,21 +334,22 @@ body {
         width:100%;
         display: flex;
         flex-direction: column;
+        margin-top: 20rem;
+        justify-content: center;
     }
 
     .content > .text > h1 {
         color: #fff;
         font-size: 2.5rem;
-        margin-left: 3rem;
+        text-align: center;
         height: 2rem;
         line-height: 3rem;
         margin-bottom: 4rem;
-        text-align: center;
     }
 
     .content > .text > h2 {
         text-align: center;      
-      
+        padding-top: 4rem;
     }
 
     .contact > form {
@@ -318,8 +378,32 @@ body {
 
     .content > .text > .icons {
         display: flex;
-        padding: 1.3rem 10%;
         grid-template-columns:  1fr 1fr;
+    }
+
+    .about > .about_me_content > .name_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 25%;
+        padding-right: 25%;
+        margin-top: 10rem;
+    }
+
+    .about > .about_me_content > .name_container > .name_intro {
+        display: flex;
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .about > .about_me_content > .name_container > .my_name {
+        font-size: 3rem;
+        display: flex;
+        width: 100%;
+        color: white;
+        text-align: center;
+    
     }
 
 
@@ -377,6 +461,11 @@ body {
         transform: translateY(0);
         opacity: 1;
         transition-delay: calc(.05s * var(--i));
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 30rem;
     }
 
 /* 
