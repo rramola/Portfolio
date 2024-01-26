@@ -64,3 +64,41 @@ career field.
     padding-left: 25%;
     padding-right: 25%;
 }
+
+
+
+
+
+
+/* .header_container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.header_container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(240, 102, 240, 0.226), transparent);
+    transition: .5s;
+} */
+
+/* .header_container:hover::after {
+    left: 100%;
+} */
+
+/* .header_container > .header_logo {
+    padding: 1.3rem 10%;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+} */
