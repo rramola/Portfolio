@@ -85,6 +85,7 @@ body {
 /***************Home page***************/
 
 
+
 .home_page_container {
     width:100%;
     display: grid;
@@ -314,8 +315,9 @@ body {
 
 
 
-
 /***************Contact page*******************/
+
+
 
 .contact_container {
     display: flex;
