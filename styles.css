@@ -209,10 +209,10 @@ body {
 
 .about_me_container {
     display: flex;
-    margin-top: 7rem;
-    margin-left: 3rem;
-    margin-right: 4rem;
-    margin-bottom: 7rem;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
     justify-content: center;
 }
 .about_me_intro {
@@ -220,7 +220,7 @@ body {
     border: rgba(156, 68, 239, 0.456) solid;
     border-radius: 3rem;
     box-shadow: 0px 0px 40px 0.2rem rgb(156, 68, 239);
-    width: 80%;
+    width: 100%;
 }
 
 .about_me_intro > h2 {
@@ -249,8 +249,9 @@ body {
     grid-template-columns: 1fr 1fr;
     color: #fff;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 6rem;
     margin-bottom: 7rem;
+    margin-left: 3rem;
     padding: 1.3rem 10%;row-gap: 7rem;
     margin-right: 1.16rem;
     column-gap: 10rem;
@@ -314,9 +315,9 @@ body {
     color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin: 7rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 4rem;
     width: 100%;
     column-gap: 5rem;
     align-content: center;
