@@ -116,7 +116,7 @@ body {
 .homepage_icons {
     display: grid;
     padding: 1.3rem 10%;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr;
     transition: .5s;
     justify-content: space-evenly;
     transition: 5s;
@@ -148,7 +148,22 @@ body {
     transition: color 0.5s, font-size 0.5s;
 }
 
-.linkedin a:hover {
+.linkedin > a:hover {
+    font-size: 7rem;
+    color: rgb(156, 68, 239);
+}
+
+.email > a {
+    color: #fff;
+    font-size: 5rem;
+    padding: 1.3rem 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 5rem;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+.email > a:hover {
     font-size: 7rem;
     color: rgb(156, 68, 239);
 }
@@ -315,44 +330,9 @@ body {
 
 
 
-/***************Contact page*******************/
-
-
-
-.contact_container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #fff;
-    height: 100vh;
-    line-height: 4rem;
-    margin-top: 7rem;
-    margin-bottom: 2rem;
-    border: rgba(156, 68, 239, 0.456) solid;
-    border-radius: 5rem;
-    box-shadow: 0px 0px 40px 0.2rem rgb(156, 68, 239);
-    width: 70%;
-    background: radial-gradient( rgba(156, 68, 239, 0.184) 15%, rgb(13 6 28) 100%);
-}
-
-.contact_intro {
-    font-size: 2.5rem;
-    margin-top: 3rem;
-}
-
-.contact_info {
-    margin-top: 3rem;
-    line-height: 4rem;
-    font-size: 1.5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-
-
-
-
-
 /****************Media queries ***************/
+
+
 
 @media (max-width: 973px) {
 
