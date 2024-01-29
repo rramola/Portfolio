@@ -418,6 +418,7 @@ body {
             height: 2rem;
             line-height: 3rem;
             margin-bottom: 4rem;
+            margin-top: 10rem;
         }
 
     .homepage_introduction > h2 {
@@ -548,7 +549,7 @@ body {
     }
 
     .menu_icon {
-        display: inline-flex;
+        display: inline-flex;   
     }
 
     #check:checked~.menu_icon #open {
