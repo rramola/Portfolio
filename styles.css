@@ -165,7 +165,7 @@ body {
     display: flex;
     color: #fff;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .home_page_image {
@@ -193,8 +193,6 @@ body {
 .about_me_container {
     display: flex;
     margin-top: 8rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
     margin-bottom: 5rem;
     justify-content: center;
 }
@@ -457,9 +455,7 @@ body {
     .skills_container {
         display: flex;
         flex-direction: column;
-        width: 80%;
         margin-top: 10rem;
-        align-items: center;
         text-align: center;
         color: #fff;
 
@@ -481,10 +477,17 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 10rem;
         align-items: center;
         text-align: center;
         color: #fff;
+    }
+
+    .left_column > img {
+        display: none;
+    }
+
+    .project > a:hover {
+        font-size: 3rem;
     }
 
 
@@ -545,5 +548,16 @@ body {
     #check:checked~.menu_icon #close {
         display: block;
     }
+
+    .projects_container {
+        margin-top: 0;
+    }
+
+    .project > a {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    
 
 }
