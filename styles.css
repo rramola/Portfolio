@@ -404,6 +404,10 @@ body {
             justify-content: center;
         }
 
+    .email {
+        font-size: 1rem;
+    }
+
 
     .homepage_introduction > h1 {
             color: #fff;
